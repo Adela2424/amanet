@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container_pagination {
+  margin: 3% 5%;
+  
+}
+.Pagination {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.user {
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  padding: 10px;
+  max-width: 170px;
+}
+
+.paginationBttns {
+  width: 40%;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+}
+
+.paginationBttns a {
+  padding: 10px;
+  margin: 8px;
+  border-radius: 5px;
+  border: 1px solid #2b2eff;
+  color: #2b2eff;
+  cursor: pointer;
+}
+
+.paginationBttns a:hover {
+  color: white;
+  background-color: #2b2eff;
+}
+
+.paginationActive a {
+  color: white;
+  background-color: #2b2eff;
+}
+
+.paginationDisabled a {
+  color: grey;
+}
+.img_pagination {
+  width: 60px;
+  height: 160px;
+}
+.model_telefon {
+  font-size: 13px;
+}
+.stoc_pagination {
+  color: rgb(73, 196, 73);
+  font-size: 14px;
+  left: 0;
+}
+.pret_pagination {
+  color: blue;
+}
+
+@media (max-width: 467px) {
+  .Pagination {
+    flex-direction: column;
+  }
+  .user {
+    margin-bottom: 30px;
+    margin: 23px;
+    
+    padding: 10px;
+    max-width: 180px;
+  }
+  .img_pagination {
+    width: 70px;
+    height: 100px;
+  }
+}
